@@ -10,10 +10,12 @@ module Fitting
                     :white_list,
                     :resource_white_list,
                     :ignore_list,
-        :explude_groups,
-        :exclude_resources,
-        :exclude_actions,
-        :include_actions
+                    :include_groups,
+                    :include_resources,
+                    :include_actions,
+                    :explude_groups,
+                    :exclude_resources,
+                    :exclude_actions
 
       def initialize
         @strict = false

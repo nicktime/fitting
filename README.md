@@ -180,6 +180,27 @@ config.ignore_list = [%r{/api/v1/users/[1-9].}, %r{/api/v1/comments}]
 
 It's work only for match_schema (NOT FOR strictly_match_schema)
 
+### include and exclude
+If you not need check all documentation, you can include or exclude groups, resources and actions.
+But be carrefully, we advices try to avoid, because easy to get confused. Watch for warnings.
+
+If you doesn't use `include_` and `exclude_`, then default include all.
+
+The order of the call is improtant.
+Each subsequent setting is performed from the result of the previous setting.
+
+If use first `include_`, then default exclude all.
+If use first `exclude_`, then default include all.
+
+* include_groups
+* include_resources
+* include_actions
+* explude_groups
+* exclude_resources
+* exclude_actions
+
+Just fill the array with headers.
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/funbox/fitting. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.

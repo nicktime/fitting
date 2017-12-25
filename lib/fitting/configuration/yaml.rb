@@ -10,7 +10,13 @@ module Fitting
                     :prefix,
                     :white_list,
                     :resource_white_list,
-                    :ignore_list
+                    :ignore_list,
+                    :include_groups,
+                    :include_resources,
+                    :include_actions,
+                    :explude_groups,
+                    :exclude_resources,
+                    :exclude_actions
 
       def initialize(yaml, title = 'fitting')
         @apib_path = yaml['apib_path']
