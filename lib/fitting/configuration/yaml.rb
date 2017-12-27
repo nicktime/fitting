@@ -11,12 +11,8 @@ module Fitting
                     :white_list,
                     :resource_white_list,
                     :ignore_list,
-                    :include_groups,
-                    :include_resources,
-                    :include_actions,
-                    :explude_groups,
-                    :exclude_resources,
-                    :exclude_actions
+                    :filter
+
 
       def initialize(yaml, title = 'fitting')
         @apib_path = yaml['apib_path']
@@ -27,6 +23,7 @@ module Fitting
         @resource_white_list = yaml['resource_white_list']
         @ignore_list = yaml['ignore_list']
         @title = title
+        @filter = yaml['filter']
         default
       end
 

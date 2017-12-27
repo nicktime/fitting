@@ -180,11 +180,11 @@ config.ignore_list = [%r{/api/v1/users/[1-9].}, %r{/api/v1/comments}]
 
 It's work only for match_schema (NOT FOR strictly_match_schema)
 
-### include and exclude
+### filter
 If you not need check all documentation, you can include or exclude groups, resources and actions.
 But be carrefully, we advices try to avoid, because easy to get confused. Watch for warnings.
 
-If you doesn't use `include_` and `exclude_`, then default include all.
+If you doesn't use this config `filter`, then default include all.
 
 The order of the call is improtant.
 Each subsequent setting is performed from the result of the previous setting.
@@ -199,7 +199,7 @@ If use first `exclude_`, then default include all.
 * exclude_resources
 * exclude_actions
 
-Just fill the array with headers.
+Just fill the array with titles.
 
 ## Contributing
 
